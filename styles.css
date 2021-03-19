@@ -23,13 +23,16 @@ a{
     color: #000000;
 }
 
+th{
+    text-align: start;
+    padding-bottom: 10px;
+}
+td{
+    padding-bottom: 5px;
+}
 table {
     width: 100%;
- }
- /* задаст фиксированную ширину для таблицы */
- table {
-    width: 600px;
- }
+}
 
 html,
 body {
