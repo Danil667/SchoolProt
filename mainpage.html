@@ -10,25 +10,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="element header">
-            <div class="container">
-                <div class="header_row">
-                    <div class="logo">Школьная столовая</div>
-                    <div class="navigation__main">
-                        <div class="Auth">
-                            <a href="remain.html">Проверка счета</a>                        
-                        </div>
-                        <div class="Registr">
-                            <a href="report.html">Сформировать отчет</a>                        
-                        </div>
-                        <div class="Logout">
-                            <a href="index.html">Выйти</a>                        
-                        </div>
-                    </div>
-                </div>
+    <header class="element header">
+        <div class="container header__container">
+            <div class="menu-burger__header">
+                <span></span>
             </div>
-        </header>
+            <nav class="header_row">
+                <ul class="menu header__menu">
+                    <li><a href="" class="menu__item logo">Школьная столовая</a></li>
+                    <li><a href="remain.html" class="menu__item">Проверка счета</a></li>
+                    <li><a href="report.html" class="menu__item">Сформировать отчет</a></li>
+                    <li><a href="index.html" class="menu__item">Выйти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
         <div class="container">
             <div class="content_head">Расписание</div>
             <div class="element content">
@@ -94,5 +91,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

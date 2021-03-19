@@ -10,28 +10,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="element header">
-            <div class="container">
-                <div class="header_row">
-                    <div class="logo">Школьная столовая</div>
-                    <div class="navigation__main">
-                        <div class="Auth">
-                            <a href="mainpage.html">Главная</a>                        
-                        </div>
-                    </div>
-                </div>
+    <header class="element header">
+        <div class="container header__container">
+            <div class="menu-burger__header">
+                <span></span>
             </div>
-        </header>
+            <nav class="header_row">
+                <ul class="menu header__menu">
+                    <li><a href="" class="menu__item logo">Школьная столовая</a></li>
+                    <li><a href="mainpage.html" class="menu__item">Главная</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
         <div class="container">
-            <div class="content_head">Должники</div>
+            <div class="content_head">Ученики</div>
+            <div class="search">
+                <form class="search_form">
+                    <input type="text" class="search_input" placeholder="Поиск по ФИО">
+                </form>
+            </div>
             <div class="element content">
                 <table>
                     <tr>
                         <th>№</th>
-                        <th>ФИО</th>
-                        <th>Дата оплаты</th>
-                        <th>Сумма</th>
+                        <th class="fio">ФИО</th>
+                        <th>Класс</th>
+                        <th>Остаток</th>
+                    </tr>
+                    <tr class="row__table">
+                        <td></th>1</td>
+                        <td class="fio">ФИО</td>
+                        <td>Класс</td>
+                        <td>Остаток</td>
+                    </tr>
+                    <tr class="row__table">
+                        <td></th>2</td>
+                        <td class="fio">fio</td>
+                        <td>Класс</td>
+                        <td>Остаток</td>
                     </tr>
                 </table>
             </div>
@@ -44,5 +62,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
