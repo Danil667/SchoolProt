@@ -40,7 +40,6 @@ body {
 .container {
     margin: 0px auto;
     width:956px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -178,6 +177,33 @@ footer{
 index.html
 */
 
+.content-wrapper{
+    width: 100%;
+}
+
+.header__nav {
+    position: absolute;
+    right: 36px;
+    display: block;
+}
+.header__menu {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__menu li {
+    list-style: none;
+    margin: 0px 0px 0px 36px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.content-wrapper{
+    margin-top: 78px;
+    padding: 10px;
+    line-height: 34px;
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -190,6 +216,7 @@ index.html
     display: flex;
     justify-content: center;
 }
+
 .modal {
     position: fixed;
     top: 50%;
@@ -259,6 +286,79 @@ report
     }
 }
 @media (max-width : 767px) {
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 40px; /* определяем размеры блока */
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .menu-burger__header span{
+        top: 16px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        bottom: 5px;
+    }
+    .menu-burger__header:before{
+        top: 5px;
+    }
+    header {
+        height: 55px;
+    }
+    .content-wrapper {
+        margin-top: 48px;
+    }
+    .header_row {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+        left: -100%;
+        transition: all 0.4s ease;
+    }
+    .header_row.open-menu {
+        left: 0;
+        height: auto;
+    }
+    .menu-burger__header.open-menu span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    .menu-burger__header.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
+    }
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
+    }
+    .header__menu {
+        display: block;
+        overflow: auto;
+    }
+    .header__menu li {
+        margin: 40px 0px 40px 33px;
+        font-size: 14px;
+    }
+
+
     .container{
         width: 320px;
     }

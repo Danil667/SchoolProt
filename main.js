@@ -29,3 +29,9 @@ registrModal.addEventListener("click", function(){
         alert("Регистрация прошла успешно")
     }
 })
+$(document).ready(function() {
+    $('.menu-burger__header').click(function() {
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header_row').toggleClass('open-menu');
+    });
+});
