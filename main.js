@@ -17,14 +17,12 @@ if(closeButton != null){
 if(registrButton != null){
     registrButton.addEventListener("click", function(){
         modal.classList.toggle("closed");
-        console.log(modal);
         modalOverlay.classList.toggle("closed");
     });
 }
 if(authButton != null){
     authButton.addEventListener("click", function(){
         modal.classList.toggle("closed");
-        console.log(modal);
         modalOverlay.classList.toggle("closed");
     });
 }
@@ -33,6 +31,8 @@ if(registrModal != null){
         let pass = prompt("Введите пароль администратора", );
         if (pass == '123456789'){
             alert("Регистрация прошла успешно")
+        }else{
+            alert("Неверный пароль")
         }
     })
 }

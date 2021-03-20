@@ -274,12 +274,20 @@ index.html
 
 .btn{
     cursor: pointer;
-    width: 70%;
+    width: 30%;
     height: 30px;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
-    border-radius: 2px; 
-    margin-right: 27px;
+    border-radius: 4px;
+}
+
+.elementModal.close{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .modal.closed {
@@ -301,6 +309,12 @@ index.html
 
 .elementModal{
     margin-bottom: 5px;
+}
+
+.input__modal{
+    border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 4px;
 }
 
 #close-button{
