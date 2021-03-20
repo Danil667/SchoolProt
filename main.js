@@ -44,18 +44,20 @@ $(document).ready(function() {
 });
 
 let inpSearch = document.querySelector(".search_input");
-inpSearch.addEventListener("keyup", function(){
-    const cards = document.querySelectorAll(".row__table");
-    inpSearch = document.querySelector(".search_input");
-    let name = inpSearch.value;
-    if(name != null){
-        cards.forEach(function(item){
-            let cardTitle = item.querySelector(".fio").textContent;
-            if(!((cardTitle.toLowerCase()).includes(name.toLowerCase()))){
-                item.classList.add("hidden");
-            }else{
-                item.classList.remove("hidden");
-            }
-        })
-    } 
-})
+if(inpSearch != null){
+    inpSearch.addEventListener("keyup", function(){
+        const cards = document.querySelectorAll(".row__table");
+        inpSearch = document.querySelector(".search_input");
+        let name = inpSearch.value;
+        if(name != null){
+            cards.forEach(function(item){
+                let cardTitle = item.querySelector(".fio").textContent;
+                if(!((cardTitle.toLowerCase()).includes(name.toLowerCase()))){
+                    item.classList.add("hidden");
+                }else{
+                    item.classList.remove("hidden");
+                }
+            })
+        } 
+    })
+}
